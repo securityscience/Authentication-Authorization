@@ -6,7 +6,7 @@ response = requests.get(
     url,
     cert=("client.crt",
           "client.key"),
-    verify="ca.crt"
+    verify="rootCA.crt"
 )
 
 print("Status:", response.status_code)

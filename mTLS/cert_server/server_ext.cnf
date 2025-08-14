@@ -7,15 +7,17 @@ distinguished_name = dn
 
 [ dn ]
 C  = US
-ST = TestState
-L  = TestCity
-O  = TestOrg
-OU = TestUnit
-CN = localhost
+ST = State
+L  = City
+O  = MyOrg
+CN = acrmaster
 
 [ req_ext ]
 subjectAltName = @alt_names
+extendedKeyUsage = serverAuth
 
 [ alt_names ]
-DNS.1   = localhost
-IP.1    = 127.0.0.1
+DNS.1   = acrmaster
+DNS.2   = localhost
+IP.1    = 192.168.0.152
+IP.2    = 127.0.0.1

@@ -33,7 +33,7 @@ mtls/
 ### 1.1 Root CA
 
 ```bash
-mkdir -p mtls/ca && cd mtls/ca
+mkdir -p ca && cd ca
 
 # Root private key (keep offline & secure)
 openssl genrsa -out rootCA.key 4096
@@ -56,16 +56,17 @@ openssl req -new -sha256 -key intermediateCA.key -out intermediateCA.csr \
 
 # Sign Intermediate with Root (pathlen=0, CA:TRUE)
 cat > intermediate_ext.cnf <<'EOF'
-basicConstraints=critical,CA:TRUE,pathlen:0
-keyUsage=critical,keyCertSign,cRLSign
-subjectKeyIdentifier=hash
-authorityKeyIdentifier=keyid:always,issuer
+[v3_intermediate_ca]
+basicConstraints = critical,CA:TRUE,pathlen:0
+keyUsage = critical,keyCertSign,cRLSign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
 EOF
 
 openssl x509 -req -in intermediateCA.csr \
   -CA rootCA.crt -CAkey rootCA.key -CAcreateserial \
   -out intermediateCA.crt -days 1825 -sha256 \
-  -extfile intermediate_ext.cnf
+  -extfile intermediate_ext.cnf -extensions v3_intermediate_ca
 ```
 
 **Distribute to servers/clients:**
@@ -85,18 +86,39 @@ openssl genrsa -out server.key 2048
 
 # Server CSR with SAN (replace values!)
 cat > server_ext.cnf <<'EOF'
-subjectAltName=DNS:api.example.local,DNS:localhost,IP:127.0.0.1,IP:192.168.1.50
-extendedKeyUsage=serverAuth
+[ req ]
+default_bits       = 2048
+prompt             = no
+default_md         = sha256
+req_extensions     = req_ext
+distinguished_name = dn
+
+[ dn ]
+C  = US
+ST = State
+L  = City
+O  = MyOrg
+CN = api.example.com
+
+[ req_ext ]
+subjectAltName = @alt_names
+extendedKeyUsage = serverAuth
+
+[ alt_names ]
+DNS.1   = api.example.com
+DNS.2   = localhost
+IP.1    = 192.168.1.11
+IP.2    = 127.0.0.1
 EOF
 
 # CSR (CN is informational if SAN present)
 openssl req -new -key server.key -out server.csr \
-  -subj "/C=US/ST=State/L=City/O=MyOrg/CN=api.example.local"
-
+  -config server_ext.cnf
+  
 # Sign with Intermediate CA
 openssl x509 -req -in server.csr \
   -CA ../ca/intermediateCA.crt -CAkey ../ca/intermediateCA.key -CAcreateserial \
-  -out server.crt -days 825 -sha256 -extfile server_ext.cnf
+  -out server.crt -days 825 -sha256 -extfile server_ext.cnf -extensions req_ext
 ```
 
 **Files to be used in Nginx:**
@@ -122,18 +144,34 @@ cd ../clients
 # Client private key
 openssl genrsa -out client1.key 2048
 
-# Client CSR (CN can be device/user ID)
-openssl req -new -key client1.key -out client1.csr \
-  -subj "/C=US/ST=State/L=City/O=MyOrg/CN=device-001"
-
 # Sign with Intermediate; EKU clientAuth
 cat > client_ext.cnf <<'EOF'
-extendedKeyUsage=clientAuth
+[ req ]
+default_bits       = 2048
+prompt             = no
+default_md         = sha256
+req_extensions     = req_ext
+distinguished_name = dn
+
+[ dn ]
+C  = US
+ST = State
+L  = City
+O  = MyOrg
+OU = IT
+CN = test-client
+
+[ req_ext ]
+extendedKeyUsage = clientAuth
 EOF
 
+# Client CSR (CN can be device/user ID)
+openssl req -new -key client1.key -out client1.csr \
+  -config client_ext.cnf
+  
 openssl x509 -req -in client1.csr \
   -CA ../ca/intermediateCA.crt -CAkey ../ca/intermediateCA.key -CAcreateserial \
-  -out client1.crt -days 365 -sha256 -extfile client_ext.cnf
+  -out client1.crt -days 365 -sha256 -extfile client_ext.cnf -extensions req_ext
 
 # Export iOS-friendly PKCS#12 (IMPORTANT: legacy PBE + simple ASCII pwd)
 openssl pkcs12 -export \
@@ -214,16 +252,17 @@ events {}
 http {
   server {
     listen 443 ssl;
-    server_name api.example.local localhost 192.168.1.50;
+    server_name api.example.local localhost 192.168.1.11;
 
     # Server cert and key
-    ssl_certificate     /path/to/mtls/server/server.crt;            # or server_fullchain.crt
+    ssl_certificate     /path/to/mtls/server/server_fullchain.crt;            # or server_fullchain.crt
     ssl_certificate_key /path/to/mtls/server/server.key;
 
     # Request & verify client certs signed by our Intermediate CA
-    ssl_client_certificate /path/to/mtls/ca/intermediateCA.crt;
+    ssl_client_certificate /path/to/mtls/ca/ca_bundle.crt;
     ssl_verify_client on;                  # or "optional" if mixed traffic is needed
     ssl_verify_depth 2;
+    ssl_ciphers HIGH:!aNULL:!MD5;
 
     # (Optional but recommended) Strong TLS
     ssl_protocols TLSv1.2 TLSv1.3;
