@@ -1,4 +1,4 @@
-# Ultimate mTLS (Mutual TLS) Implementation Guide
+# Scalable mTLS (Mutual TLS) Implementation Guide
 
 A **complete end-to-end "step-by-step guide"** for mTLS with mobile devices (iOS/Android), including **Root + Intermediate CA**, **Server Certificates**, **Client Certificates (Scalable Strategies)**, **Nginx Configuration**, **Installation Steps on iOS**, **`curl`/Python Tests**, **Certificate Renewal/Revocation**, and **Scale-Out Distribution Options**.
 
@@ -12,10 +12,11 @@ A **complete end-to-end "step-by-step guide"** for mTLS with mobile devices (iOS
 * Pick a working folder (example):
 
 ```
-mtls/
-  ca/
-  server/
-  clients/
+mTLS/
+  cert_ca/
+  cert_server/
+  cert_clients/
+  client/
   nginx/
 ```
 
@@ -346,6 +347,28 @@ r = requests.get(
 print(r.status_code, r.text)
 ```
 
+### 6.4 Python `pkcs12` (Test for .p12)
+
+```python
+import requests
+from requests_pkcs12 import Pkcs12Adapter
+
+session = requests.Session()
+session.mount("https://", Pkcs12Adapter(
+    pkcs12_filename="client.p12",
+    pkcs12_password="Test1234"
+))
+
+r = session.get(
+    "https://localhost/api",
+    verify="rootCA.crt",
+    timeout=10
+)
+
+print(f"Status: {r.status_code}")
+print(f"Body: {r.text}")
+```
+
 ## 7) Scale to 100–1000 Devices (Distribution)
 
 **Three Practical Tracks** (Choose One):
@@ -445,6 +468,57 @@ ssl_crl /path/to/mtls/ca/intermediateCA.crl;
   ```
 
 > Note: (hashes must match)
+
+* Check client cert chain
+
+```bash
+openssl verify -CAfile cert_ca/ca_bundle.crt cert_clients/client.crt
+```
+
+> It should output `client.crt: OK`
+
+* Verify if intermediate CA is actually signed the client cert
+
+  ```bash
+  openssl verify -CAfile <(cat intermediateCA.crt rootCA.crt) client.crt
+  ```
+
+> It should output: `client.crt: OK`
+
+* Check the certificate's EKU
+
+```bash
+openssl x509 -in client.crt -text -noout | grep -A 1 "Extended Key Usage"
+```
+
+> It should output: `Extended Key Usage: TLS Web Client Authentication`
+
+* verify the SAN after regenerating the server certificate
+
+```bash
+openssl x509 -in server.crt -noout -text | grep -A1 "Subject Alternative Name"
+```
+
+> It should output: `DNS:api.example.local, DNS:localhost, IP Address:127.0.0.1, IP Address:192.168.0.152`
+
+* Other useful verification commands:
+
+```bash
+openssl x509 -in client.crt -noout -issuer
+openssl x509 -in intermediateCA.crt -noout -subject
+openssl verify -CAfile rootCA.crt intermediateCA.crt
+
+# For Integrity
+openssl x509 -in client.crt -noout -text
+openssl x509 -in intermediateCA.crt -noout -text
+openssl x509 -in rootCA.crt -noout -text
+```
+
+* Check Nginx is actually listening on 443
+
+```bash
+netstat -ano | findstr :443
+```
 
 
 ## 10) Minimal iOS App Snippet (Swift) for mTLS (Optional)
