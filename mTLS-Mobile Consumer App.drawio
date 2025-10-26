@@ -1,0 +1,514 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0" version="28.2.3">
+  <diagram name="Page-1" id="FgjzkaPdOtKWc8lPyaJH">
+    <mxGraphModel dx="1230" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="2000" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-2" value="Admin" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="40" y="160" width="140" height="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-2" vertex="1">
+          <mxGeometry x="65" y="70" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-41" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-2" vertex="1">
+          <mxGeometry x="65" y="350" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-3" value="Certificate Authority" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="280" y="160" width="130" height="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-27" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-3" vertex="1">
+          <mxGeometry x="60" y="180" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-29" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-3" vertex="1">
+          <mxGeometry x="65" y="200" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-30" value="Validate CSR, Create &amp;amp; Sign Server Cert" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-3" source="vB9d8FVp9IlUgGv8pV46-29" target="vB9d8FVp9IlUgGv8pV46-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="865" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="485" y="885" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-4" value="Backend API Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="520" y="160" width="130" height="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="70" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-19" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="84" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-20" value="Generate Server Private Key and Public Key Pair" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-19" target="vB9d8FVp9IlUgGv8pV46-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="480" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="265" y="500" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-24" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="130" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-25" value="Create CSR for Server (Using Server Key Pair)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-24" target="vB9d8FVp9IlUgGv8pV46-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="665" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="340" y="685" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-26" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="180" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-32" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="270" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-33" value="Bundle Server Cert, Chain (If Intermediates), and Private Key" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-32" target="vB9d8FVp9IlUgGv8pV46-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="905" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="395" y="925" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-34" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="320" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-45" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="350" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-46" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="364" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-47" value="Generate Client Private Key and Public Key Pair" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-46" target="vB9d8FVp9IlUgGv8pV46-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="760" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="265" y="780" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-48" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="410" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-49" value="Create CSR for Client (Using Client Key Pair)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-48" target="vB9d8FVp9IlUgGv8pV46-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="945" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="340" y="965" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-42" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="-200" y="460" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-43" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="-195" y="480" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-44" value="Validate CSR, Create &amp;amp; Sign Client Cert" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-43" target="vB9d8FVp9IlUgGv8pV46-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="1145" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="225" y="1165" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-50" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="460" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-58" value="Submit Client CSR for Signing&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=classic;curved=0;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;endFill=1;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-50" target="vB9d8FVp9IlUgGv8pV46-42" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint y="530" as="sourcePoint" />
+            <mxPoint x="80" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-59" value="Return Signed Client Cert" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-42" target="vB9d8FVp9IlUgGv8pV46-50" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80" y="580" as="sourcePoint" />
+            <mxPoint x="100" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-51" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="550" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-52" value="&lt;div&gt;Generate Strong Password for Client PKCS#12&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-51" target="vB9d8FVp9IlUgGv8pV46-51" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="621" y="1255" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="656" y="1275" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-62" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="590" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-63" value="&lt;div&gt;Create Client PKCS#12 with Strong Password&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-62" target="vB9d8FVp9IlUgGv8pV46-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="701" y="1395" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="736" y="1415" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-53" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="640" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-66" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="720" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-79" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="896" width="10" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-83" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="966" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-87" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="916" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-88" value="Validate Request (Authn/Authz, Device Attestation if Applicable)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-87" target="vB9d8FVp9IlUgGv8pV46-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1141" y="1531" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1176" y="1551" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-89" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="60" y="1144" width="10" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-90" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="1214" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-91" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-4" vertex="1">
+          <mxGeometry x="65" y="1164" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-92" value="Validate Request (Authn/Authz, Device Attestation if Applicable)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-4" source="vB9d8FVp9IlUgGv8pV46-91" target="vB9d8FVp9IlUgGv8pV46-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1141" y="1779" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1176" y="1799" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vB9d8FVp9IlUgGv8pV46-4">
+          <mxGeometry x="65" y="1036" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-3" value="&lt;div&gt;Encrypt PKCS#12 Using Symmetric Encryption [Optional]&lt;/div&gt;&lt;div&gt;Encrypt&amp;nbsp;Symmetric Encryption Password Using Mobile Public Key&amp;nbsp;[Optional]&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="vB9d8FVp9IlUgGv8pV46-4" source="zIwoCq0IyI01btDkVQgD-2" target="zIwoCq0IyI01btDkVQgD-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1106" y="1681" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1141" y="1701" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vB9d8FVp9IlUgGv8pV46-4">
+          <mxGeometry x="65" y="1285" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-8" value="Encrypt PKCS#12 Password Using Mobile Public Key" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="vB9d8FVp9IlUgGv8pV46-4" source="zIwoCq0IyI01btDkVQgD-7" target="zIwoCq0IyI01btDkVQgD-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1271" y="1710" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1306" y="1730" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-5" value="Secret Manager" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="880" y="160" width="130" height="1820" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-54" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-5" vertex="1">
+          <mxGeometry x="60" y="640" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-67" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-5" vertex="1">
+          <mxGeometry x="60" y="720" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-84" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-5" vertex="1">
+          <mxGeometry x="60" y="966" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-6" value="Mobile App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1120" y="160" width="130" height="1810" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-75" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="856" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-76" value="&lt;div&gt;Detect the Need for New Cert (e.g., Expiration Check, Revocation, Compromise Alert)&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-6" source="vB9d8FVp9IlUgGv8pV46-75" target="vB9d8FVp9IlUgGv8pV46-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="1351" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="442" y="1371" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-80" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="896" width="10" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-93" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="-180" y="1214" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-94" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="1144" width="10" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-99" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="1398" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-100" value="Import PKCS#12 with the Password" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-6" source="vB9d8FVp9IlUgGv8pV46-99" target="vB9d8FVp9IlUgGv8pV46-99" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="527" y="1663" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="562" y="1683" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-101" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="1438" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-102" value="Delete Password from Memory After Import" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-6" source="vB9d8FVp9IlUgGv8pV46-101" target="vB9d8FVp9IlUgGv8pV46-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="947" y="1723" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="982" y="1743" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-103" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="1478" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-104" value="Invalidated &amp;amp; Delete Old PKCS#12" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-6" source="vB9d8FVp9IlUgGv8pV46-103" target="vB9d8FVp9IlUgGv8pV46-103" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="727" y="1773" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="762" y="1793" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-105" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="1543" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-115" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-6" vertex="1">
+          <mxGeometry x="60" y="1633" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vB9d8FVp9IlUgGv8pV46-6">
+          <mxGeometry x="60" y="1106" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-6" value="&lt;div&gt;Decrypt&amp;nbsp;Symmetric Encryption Password&amp;nbsp;Using Mobile Private Key&amp;nbsp;[Optional]&lt;/div&gt;&lt;div&gt;Decrypt PKCS#12&amp;nbsp;Using&amp;nbsp;Symmetric Encryption Password&amp;nbsp;[Optional]&amp;nbsp;&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="vB9d8FVp9IlUgGv8pV46-6" source="zIwoCq0IyI01btDkVQgD-5" target="zIwoCq0IyI01btDkVQgD-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1011" y="1751" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1046" y="1771" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vB9d8FVp9IlUgGv8pV46-6">
+          <mxGeometry x="60" y="1356" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-11" value="Decrypt PKCS#12 Password Using Mobile Private Key" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="vB9d8FVp9IlUgGv8pV46-6" source="zIwoCq0IyI01btDkVQgD-10" target="zIwoCq0IyI01btDkVQgD-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1151" y="1961" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1186" y="1981" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-12" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vB9d8FVp9IlUgGv8pV46-6">
+          <mxGeometry x="60" y="809" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zIwoCq0IyI01btDkVQgD-13" value="&lt;div&gt;iOS: If Secure Enclave is Not Supported, Generate Keys with the Keychain Service API&lt;/div&gt;&lt;div&gt;Android: If TEE/Strongbox is Not Supported, Generate Key with Keystore Service API&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="vB9d8FVp9IlUgGv8pV46-6" source="zIwoCq0IyI01btDkVQgD-12" target="zIwoCq0IyI01btDkVQgD-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="547" y="1475" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="582" y="1495" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-7" value="mTLS-Enabled Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1660" y="160" width="130" height="1810" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-36" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-7" vertex="1">
+          <mxGeometry x="60" y="320" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-37" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-7" vertex="1">
+          <mxGeometry x="65" y="334" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-38" value="&lt;div&gt;Load Server Cert and Root CA Cert&amp;nbsp;&lt;/div&gt;&lt;div&gt;(CA Bundle if Intermediates) for mTLS&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-7" source="vB9d8FVp9IlUgGv8pV46-37" target="vB9d8FVp9IlUgGv8pV46-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="730" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="265" y="750" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-110" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-7" vertex="1">
+          <mxGeometry x="60" y="1543" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-107" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-7" vertex="1">
+          <mxGeometry x="65" y="1558" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-108" value="&lt;div&gt;Validate Client Cert Using Root CA or System Trust Store&lt;/div&gt;&lt;div&gt;(Check Chain, Revocation via OCSP/CRL)&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-7" source="vB9d8FVp9IlUgGv8pV46-107" target="vB9d8FVp9IlUgGv8pV46-107" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="991" y="2158" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1026" y="2178" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-116" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-7" vertex="1">
+          <mxGeometry x="60" y="1633" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-117" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="vB9d8FVp9IlUgGv8pV46-7" vertex="1">
+          <mxGeometry x="65" y="1648" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-118" value="&lt;div&gt;Validate Credentials&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="vB9d8FVp9IlUgGv8pV46-7" source="vB9d8FVp9IlUgGv8pV46-117" target="vB9d8FVp9IlUgGv8pV46-117" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="991" y="2248" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1026" y="2268" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-12" value="Initiate Server Cert Generation" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-10" target="vB9d8FVp9IlUgGv8pV46-13" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="480" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-28" value="Submit Server CSR for Signing&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=classic;curved=0;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;endFill=1;" parent="1" source="vB9d8FVp9IlUgGv8pV46-26" target="vB9d8FVp9IlUgGv8pV46-27" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="460" y="410" as="sourcePoint" />
+            <mxPoint x="540" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-31" value="Return Signed Server Cert" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-27" target="vB9d8FVp9IlUgGv8pV46-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="460" as="sourcePoint" />
+            <mxPoint x="560" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-35" value="Deploy Server Cert and Private Key, and CA Bundle (if Intermediates)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-34" target="vB9d8FVp9IlUgGv8pV46-36" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="895" y="620" as="sourcePoint" />
+            <mxPoint x="935" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-57" value="Initiate Client Cert Generation (e.g., Mobile App)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-41" target="vB9d8FVp9IlUgGv8pV46-45" edge="1">
+          <mxGeometry x="0.0025" width="80" relative="1" as="geometry">
+            <mxPoint x="775" y="720" as="sourcePoint" />
+            <mxPoint x="855" y="720" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-60" value="Import/Store PKCS Password" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-53" target="vB9d8FVp9IlUgGv8pV46-54" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="1190" y="970" as="sourcePoint" />
+            <mxPoint x="1230" y="835" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-65" value="Confirm Storage" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-54" target="vB9d8FVp9IlUgGv8pV46-53" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="760" as="sourcePoint" />
+            <mxPoint x="1150" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-68" value="Import/Store PKCS#12" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-66" target="vB9d8FVp9IlUgGv8pV46-67" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="1540" y="1060" as="sourcePoint" />
+            <mxPoint x="1580" y="925" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-69" value="Confirm Storage" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-67" target="vB9d8FVp9IlUgGv8pV46-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="850" as="sourcePoint" />
+            <mxPoint x="1500" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-81" value="API Call: Request PKCS#12 (with Mobile Public Key [Optional])" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;endFill=0;startArrow=classic;startFill=1;" parent="1" source="vB9d8FVp9IlUgGv8pV46-79" target="vB9d8FVp9IlUgGv8pV46-80" edge="1">
+          <mxGeometry x="0.1186" y="5" width="80" relative="1" as="geometry">
+            <mxPoint x="1640" y="1296" as="sourcePoint" />
+            <mxPoint x="1680" y="1161" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-82" value="Response: (Encrypted&amp;nbsp;Symmetric Encryption Password&amp;nbsp;[Optional] and) PKCS#12" style="html=1;verticalAlign=bottom;endArrow=none;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;startArrow=open;startFill=0;endFill=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-80" target="vB9d8FVp9IlUgGv8pV46-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="1086" as="sourcePoint" />
+            <mxPoint x="1600" y="1086" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-85" value="Fetch PKCS#12" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-83" target="vB9d8FVp9IlUgGv8pV46-84" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="1630" y="1266" as="sourcePoint" />
+            <mxPoint x="1670" y="1131" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-86" value="Return&amp;nbsp;PKCS#12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-84" target="vB9d8FVp9IlUgGv8pV46-83" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1340" y="1056" as="sourcePoint" />
+            <mxPoint x="1590" y="1056" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-95" value="API Call: Request PKCS#12 Password&amp;nbsp;with Mobile Public Key" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;endFill=0;startArrow=classic;startFill=1;" parent="1" source="vB9d8FVp9IlUgGv8pV46-89" target="vB9d8FVp9IlUgGv8pV46-94" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="2167" y="1654" as="sourcePoint" />
+            <mxPoint x="2207" y="1519" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-96" value="Response: Encrypted PKCS#12 Password" style="html=1;verticalAlign=bottom;endArrow=none;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;startArrow=open;startFill=0;endFill=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-94" target="vB9d8FVp9IlUgGv8pV46-89" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1877" y="1444" as="sourcePoint" />
+            <mxPoint x="2127" y="1444" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-97" value="Fetch PKCS#12 Password" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-90" target="vB9d8FVp9IlUgGv8pV46-93" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="2157" y="1624" as="sourcePoint" />
+            <mxPoint x="2197" y="1489" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-98" value="Return&amp;nbsp;PKCS#12 Password" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-93" target="vB9d8FVp9IlUgGv8pV46-90" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1867" y="1414" as="sourcePoint" />
+            <mxPoint x="2117" y="1414" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-111" value="&lt;div&gt;Establish mTLS Connection&lt;/div&gt;&lt;div&gt;(Present Client Cert, Validate Server Cert Using Root CA or System Trust Store)&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=classic;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;endFill=1;startArrow=none;startFill=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-105" target="vB9d8FVp9IlUgGv8pV46-110" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="2160" y="1933" as="sourcePoint" />
+            <mxPoint x="2200" y="1798" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-112" value="Connection Established (Mutual Authn Complete)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;startArrow=none;startFill=0;endFill=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-110" target="vB9d8FVp9IlUgGv8pV46-105" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1870" y="1723" as="sourcePoint" />
+            <mxPoint x="2120" y="1723" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-119" value="API Call: Send Request (Login)" style="html=1;verticalAlign=bottom;endArrow=classic;curved=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;endFill=1;startArrow=none;startFill=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-115" target="vB9d8FVp9IlUgGv8pV46-116" edge="1">
+          <mxGeometry x="-0.0035" width="80" relative="1" as="geometry">
+            <mxPoint x="2730" y="2023" as="sourcePoint" />
+            <mxPoint x="2770" y="1888" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-120" value="Server: Response (JWT Token &amp;amp; Refresh Token)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;startArrow=none;startFill=0;endFill=0;" parent="1" source="vB9d8FVp9IlUgGv8pV46-116" target="vB9d8FVp9IlUgGv8pV46-115" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2440" y="1813" as="sourcePoint" />
+            <mxPoint x="2690" y="1813" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-121" value="&lt;div align=&quot;center&quot;&gt;Runtime Phase: Cert Download and Usage&lt;/div&gt;" style="shape=partialRectangle;html=1;top=1;align=center;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="930" y="940" width="810" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vB9d8FVp9IlUgGv8pV46-122" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Mutual TLS (mTLS) for Mobile App&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;Mutual TLS (mTLS) is a security protocol that enables two-way authentication between mobile app (Client) and mTLS-enable server. The mobile app and server present X.509 certificates to verify their identities, ensuring secure commnunication over HTTPS.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="490" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
